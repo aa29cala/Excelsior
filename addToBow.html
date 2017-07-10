@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jspos/lexer.js"></script>
+    <script type="text/javascript" src="jspos/lexicon.js_"></script>
+    <script type="text/javascript" src="jspos/POSTagger.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="createNav.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="stylesheet.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+</head>
+<body>
+<script>createNav();</script>
+<div class="lesserSpace"></div>
+<div class="container">
+    <h4><label for="bowRowTextInput">Insert Primary Key For New Item</label></h4>
+    <input type="text" id="bowRowTextInput" name="bowRowTextInput" size="35" class="form-control">
+    <input type="button" value="Generate" size="35" id="generate" class="btn btn-success">
+    <p id="answer"></p>
+    <p><b id="lineToCopy"></b></p>
+</div>
+<script>
+    document.querySelector("#generate").addEventListener("click", putTextInAnswer);
+    function putTextInAnswer() {
+        var bowRowTextInput = document.querySelector("#bowRowTextInput").value;
+        document.querySelector("#answer").innerHTML = "Paste this into the bow_processing.php file:";
+        document.querySelector("#lineToCopy").innerHTML =  generateBowRow(bowRowTextInput);
+    }
+
+</script>
+
+</body>
+</html>

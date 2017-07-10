@@ -1,0 +1,547 @@
+h1 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+}
+
+h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+button[type="button"] {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+ul {
+    padding-top: 10px;
+}
+
+input[type="text"] {
+    font-family: 'Yanone Kaffeesatz', Montserrat, sans-serif;
+}
+
+.fixed {
+    position: fixed;
+    margin: auto;
+}
+.container {
+    margin:auto;
+}
+.main {
+
+}
+.row {
+    margin:auto;
+    padding: 0;
+}
+
+nav div {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    font-family: 'Yanone Kaffeesatz', Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #d5d5d5 !important;
+}
+
+.navbar-nav li a:hover,
+.navbar-brand:hover,
+.navbar:hover {
+    color: #36b5ff !important;
+}
+
+.navbar-nav li.active a {
+    color: #36b5ff !important;
+    background-color: #29292c !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+}
+
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: red !important;
+}
+
+.space {
+    margin: 250px;
+}
+
+.lesserSpace {
+    margin: 250px;
+}
+
+
+/*=== tag for styling footer===*/
+
+ft {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+/*=== style chatbot answer===*/
+
+li.response {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    padding: 2px 5px;
+    margin-bottom: 10px;
+    float: left;
+    clear: both;
+    border-radius: 5px;
+    background-color: #36b5ff;
+    /*old color 42F4F4*/
+}
+
+
+/*=== style user question===*/
+
+li.comment {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    padding: 2px 5px;
+    margin-bottom: 10px;
+    float: right;
+    clear: both;
+    text-align: right;
+    border-radius: 5px;
+    background-color: #13F299;
+}
+
+body {
+    background: #efefef;
+    padding: 10px;
+    font-family: 'Varela Round';
+}
+
+
+/*=== 2. Anchor Link ===*/
+
+a {
+    color: #aaaa;
+    transition: all ease-in-out 200ms;
+}
+
+a:hover {
+    color: #333333;
+    text-decoration: none;
+}
+
+#loginbutton {
+    text-align: right;
+}
+
+
+/*login page */
+
+
+/*=== 3. Text Outside the Box ===*/
+
+.etc-login-form {
+    color: #919191;
+    padding: 10px 20px;
+}
+
+.etc-login-form p {
+    margin-bottom: 5px;
+}
+
+
+/*=== 4. Main Form ===*/
+
+.login-form-1 {
+    max-width: 300px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.main-login-form {
+    position: relative;
+}
+
+.login-form-1 .form-control {
+    border: 0;
+    box-shadow: 0 0 0;
+    border-radius: 0;
+    background: transparent;
+    color: #555555;
+    padding: 7px 0;
+    font-weight: bold;
+    height: auto;
+}
+
+.login-form-1 .form-control::-webkit-input-placeholder {
+    color: #999999;
+}
+
+.login-form-1 .form-control:-moz-placeholder,
+.login-form-1 .form-control::-moz-placeholder,
+.login-form-1 .form-control:-ms-input-placeholder {
+    color: #999999;
+}
+
+.login-form-1 .form-group {
+    margin-bottom: 0;
+    border-bottom: 2px solid #efefef;
+    padding-right: 20px;
+    position: relative;
+}
+
+.login-form-1 .form-group:last-child {
+    border-bottom: 0;
+}
+
+.login-group {
+    background: #ffffff;
+    color: #999999;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.login-group-checkbox {
+    padding: 5px 0;
+}
+
+#picture {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    padding: 7px 6px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    clear: both;
+    border-radius: 5px;
+    background-color: #36b5ff;
+    /*old color 42F4F4*/
+}
+
+#youtube {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    padding: 7px 6px;
+    margin-bottom: 10px;
+    float: left;
+    clear: both;
+    border-radius: 5px;
+    background-color: #36b5ff;
+    /*old color 42F4F4*/
+}
+
+#picture:hover {
+    color: #424242;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    opacity: 1;
+    transform: scale(1.75);
+    -ms-transform: scale(1.75);
+    /* IE 9 */
+    -webkit-transform: scale(1.75);
+    /* Safari and Chrome */
+}
+
+
+/*=== 5. Login Button ===*/
+
+.login-form-1 .login-button {
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    background: #ffffff;
+    color: #999999;
+    padding: 11px 0;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    border: 5px solid #efefef;
+    border-radius: 50%;
+    transition: all ease-in-out 500ms;
+}
+
+.login-form-1 .login-button:hover {
+    color: #555555;
+    transform: rotate(450deg);
+}
+
+.login-form-1 .login-button.clicked {
+    color: #555555;
+}
+
+.login-form-1 .login-button.clicked:hover {
+    transform: none;
+}
+
+.login-form-1 .login-button.clicked.success {
+    color: #2ecc71;
+}
+
+.login-form-1 .login-button.clicked.error {
+    color: #e74c3c;
+}
+
+
+/*=== 6. Form Invalid ===*/
+
+label.form-invalid {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    display: block;
+    margin-top: -25px;
+    padding: 7px 9px;
+    background: #777777;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+label.form-invalid:after {
+    top: 100%;
+    right: 10px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-top-color: #777777;
+    border-width: 6px;
+}
+
+
+/*=== 7. Form - Main Message ===*/
+
+.login-form-main-message {
+    background: #ffffff;
+    color: #999999;
+    border-left: 3px solid transparent;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    height: 0;
+    padding: 0 20px 0 17px;
+    opacity: 0;
+    transition: all ease-in-out 200ms;
+}
+
+.login-form-main-message.show {
+    height: auto;
+    opacity: 1;
+    padding: 10px 20px 10px 17px;
+}
+
+.login-form-main-message.success {
+    border-left-color: #2ecc71;
+}
+
+.login-form-main-message.error {
+    border-left-color: #e74c3c;
+}
+
+
+/*=== 8. Custom Checkbox & Radio ===*/
+
+
+/* Base for label styling */
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked,
+[type="radio"]:not(:checked),
+[type="radio"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="checkbox"]:not(:checked)+label,
+[type="checkbox"]:checked+label,
+[type="radio"]:not(:checked)+label,
+[type="radio"]:checked+label {
+    position: relative;
+    padding-left: 25px;
+    padding-top: 1px;
+    cursor: pointer;
+}
+
+
+/* checkbox aspect */
+
+[type="checkbox"]:not(:checked)+label:before,
+[type="checkbox"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before,
+[type="radio"]:checked+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 17px;
+    height: 17px;
+    border: 0px solid #aaa;
+    background: #f0f0f0;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+/* checked mark aspect */
+
+[type="checkbox"]:not(:checked)+label:after,
+[type="checkbox"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after,
+[type="radio"]:checked+label:after {
+    position: absolute;
+    color: #555555;
+    transition: all .2s;
+}
+
+
+/* checked mark aspect changes */
+
+[type="checkbox"]:not(:checked)+label:after,
+[type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+[type="checkbox"]:checked+label:after,
+[type="radio"]:checked+label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* disabled checkbox */
+
+[type="checkbox"]:disabled:not(:checked)+label:before,
+[type="checkbox"]:disabled:checked+label:before,
+[type="radio"]:disabled:not(:checked)+label:before,
+[type="radio"]:disabled:checked+label:before {
+    box-shadow: none;
+    border-color: #8c8c8c;
+    background-color: #878787;
+}
+
+[type="checkbox"]:disabled:checked+label:after,
+[type="radio"]:disabled:checked+label:after {
+    color: #555555;
+}
+
+[type="checkbox"]:disabled+label,
+[type="radio"]:disabled+label {
+    color: #8c8c8c;
+}
+
+
+/* accessibility */
+
+[type="checkbox"]:checked:focus+label:before,
+[type="checkbox"]:not(:checked):focus+label:before,
+[type="checkbox"]:checked:focus+label:before,
+[type="checkbox"]:not(:checked):focus+label:before {
+    border: 1px dotted #f6f6f6;
+}
+
+
+/* hover style just for information */
+
+label:hover:before {
+    border: 1px solid #f6f6f6 !important;
+}
+
+
+/*=== Customization ===*/
+
+
+/* radio aspect */
+
+[type="checkbox"]:not(:checked)+label:before,
+[type="checkbox"]:checked+label:before {
+    border-radius: 3px;
+}
+
+[type="radio"]:not(:checked)+label:before,
+[type="radio"]:checked+label:before {
+    border-radius: 35px;
+}
+
+
+/* selected mark aspect */
+
+[type="checkbox"]:not(:checked)+label:after,
+[type="checkbox"]:checked+label:after {
+    content: '✔';
+    top: 0;
+    left: 2px;
+    font-size: 14px;
+}
+
+[type="radio"]:not(:checked)+label:after,
+[type="radio"]:checked+label:after {
+    content: '\2022';
+    top: 0;
+    left: 3px;
+    font-size: 30px;
+    line-height: 25px;
+}
+
+
+/*=== 9. Misc ===*/
+
+.logo {
+    padding: 15px 0;
+    font-size: 25px;
+    color: #aaaaaa;
+    font-weight: bold;
+}
+
+
+/* end login page*/
+
+
+/* manual page */
+
+.div_class {
+    border-radius: 4px;
+    text-align: left;
+    background: #d9d9d9;
+    padding: 8px;
+    margin: 15px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 22px;
+}
+
+.div_title {
+    border-radius: 4px;
+    text-align: center;
+    background: #d9d9d9;
+    padding: 8px;
+    margin: 15px;
+}
+
+.align_left {
+    text-align: left;
+}

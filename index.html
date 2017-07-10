@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Excelsior Chatbot - ask a question!</title>
+    <meta name="author" content="name">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Excelsior is a chatbot designed to assist students taking Siena's CSIS 010 and CSIS 011 courses. This chatbot can help with any topic that the labs in those courses cover.">
+    <meta name="keywords" content="keywords,here">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="stylesheet.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <script type="text/javascript" src="jspos/lexer.js"></script>
+    <script type="text/javascript" src="jspos/lexicon.js_"></script>
+    <script type="text/javascript" src="jspos/POSTagger.js"></script>
+    <script type="text/javascript" src="createIndex.js"></script>
+    <script src="script.js"></script>
+
+    <!--the only HTML on this page is the modal that we implemented, and the rest of it is contained in the referenced js file-->
+    <div class="modal fade" id="id01" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Feedback - Why wasn't this answer helpful?</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <fieldset>
+                            <textarea id="textareaBad" class="form-control"></textarea>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="id02" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Feedback - How did this answer help you? :)</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <fieldset>
+                            <textarea id="textareaGood" class="form-control"></textarea>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
